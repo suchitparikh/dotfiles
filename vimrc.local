@@ -8,7 +8,7 @@ set textwidth=80
 au FileType php  setlocal keywordprg=pman
 au FileType sass setlocal ts=2 sw=2 sts=2
 
-" Trim whitespace from the end of a line
+" Trim whitespace from the end of all lines
 command Trim %s/\s\+$//
 
 " Alias W to also be "save"
