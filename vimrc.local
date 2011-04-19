@@ -1,0 +1,15 @@
+color molokai
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set textwidth=80
+
+au FileType php  setlocal keywordprg=pman
+au FileType sass setlocal ts=2 sw=2 sts=2
+
+" Trim whitespace from the end of a line
+command Trim %s/\s\+$//
+
+" Alias W to also be "save"
+command W w
