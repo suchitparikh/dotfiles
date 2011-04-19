@@ -1,4 +1,13 @@
 #!/bin/bash
+#
+# Installs the dotfiles into your home directory
+#
+# "x" means the file already exists. Delete the current one if you want to
+#     install the new one
+#
+# "+" means the file was installed successfully
+#
+# "?" means there was a problem installing the file
 
 SCRIPT=`basename $0`
 DIR=$(cd `dirname $0` && pwd)
