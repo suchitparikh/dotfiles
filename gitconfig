@@ -2,32 +2,37 @@
 	name = Sam Nguyen
 	email = samuel.nguyen@panasonic.aero
 
-[color]
-  ui = auto
-  
-[color "branch"]
-  current = yellow reverse
-  local   = yellow
-  remote  = green
+[core]
+	excludesfile = /Users/nguyens23/.gitignore
+	quotepath = false
 
+[gui]
+	recentrepo = /Volumes/deploy-test/cds-ui
+
+[color]
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = white bold
+    meta = yellow
+    frag = magenta
+    old = red
+    new = white bold
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
 
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  df = diff
-  dc = diff --cached
-  lg = log -p
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  ls = ls-files
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dfc = diff --cached
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files
