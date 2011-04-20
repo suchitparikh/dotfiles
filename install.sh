@@ -28,8 +28,7 @@ do
         # Run rake if necessary
         if [ -e "$DIR/$FILE/Rakefile" ]
         then
-            rake -f "$DIR/$FILE/Rakefile"
+            (cd "$DIR/$FILE"; rake)
         fi
     fi
-
 done
