@@ -3,8 +3,9 @@ source ~/.bash_aliases
 export PATH=~/bin:~/.cabal/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Library/Contributions/examples:/opt/local/bin:/opt/local/sbin:$PATH
 
 # Color terminal
+# Enable colors in `ls`
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
+export LSCOLORS=exfxcxdxbxegedabagacad
 
 export EDITOR="vim"
 
@@ -16,7 +17,7 @@ fi
 RED="\[\e[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\e[0;32m\]"
-WHITE="\[\033[1;37m\]"
+WHITE="\[\033[0;37m\]"
 CLR="\[\033[0m\]"
 
 PS1="\u@$WHITE\h$CLR:$GREEN\W$YELLOW\$(__git_ps1)$CLR\$ "
