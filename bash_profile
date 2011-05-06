@@ -31,5 +31,6 @@ export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
 
-# Save and reload the history after each command finishes
+# Update history after every command so that history is shared between
+# different sessions (and between Terminal windows)
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
