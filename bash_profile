@@ -1,4 +1,4 @@
-source ~/.bash_aliases
+[[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
 
 export PATH=~/bin:~/.cabal/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Library/Contributions/examples:/opt/local/bin:/opt/local/sbin:$PATH
 
