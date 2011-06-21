@@ -1,4 +1,4 @@
-[[ -f ~/.bash_aliases ]] && source ~/.bash_aliases
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
 export PATH=~/bin:~/.cabal/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Library/Contributions/examples:/opt/local/bin:/opt/local/sbin:$PATH
 
@@ -13,6 +13,7 @@ export EDITOR="vim"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
       . `brew --prefix`/etc/bash_completion
 fi
+. ~/.bash_completion.d/*
 
 RED="\[\e[0;31m\]"
 YELLOW="\[\033[0;33m\]"
@@ -34,3 +35,8 @@ shopt -s histappend                      # append to history, don't overwrite it
 # Update history after every command so that history is shared between
 # different sessions (and between Terminal windows)
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# For Go programming
+if [ -f /usr/local/bin/brew ]; then
+    export GOROOT=`brew --prefix go`
+fi

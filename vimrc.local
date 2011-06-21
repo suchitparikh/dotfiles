@@ -14,6 +14,9 @@ au FileType sass setlocal ts=2 sw=2 sts=2
 " Trim whitespace from the end of all lines
 command Trim %s/\s\+$//
 
+"" Convert tabs to 4 spaces
+command Detab %s/\t/    /g
+
 " Alias W to also be "save"
 command W w
 
