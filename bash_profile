@@ -1,6 +1,6 @@
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
-export PATH=~/bin:~/.cabal/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Library/Contributions/examples:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/Cellar/android-sdk/r12/tools:~/bin:~/.cabal/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Library/Contributions/examples:/opt/local/bin:/opt/local/sbin:$PATH
 
 # Color terminal
 # Enable colors in `ls`
@@ -39,4 +39,5 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 # For Go programming
 if [ -f /usr/local/bin/brew ]; then
     export GOROOT=`brew --prefix go`
+    export GOBIN="$GOROOT/bin"
 fi
