@@ -11,7 +11,8 @@ export EDITOR="/usr/bin/vim"
 
 # bash completion
 . ~/.bash_completion.d/*
-if [[ `which brew` != "" ]]; then
+which brew 2>/dev/null >/dev/null
+if [[ $? != 1 ]]; then
     if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
     fi
