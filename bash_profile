@@ -11,7 +11,11 @@ export EDITOR="/usr/bin/vim"
 
 # bash completion
 . ~/.bash_completion.d/*
-[ -d /usr/local/etc/bash_completion.d ] && . /usr/local/etc/bash_completion.d/*
+if [[ `which brew` != "" ]]; then
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
+fi
 
 RED="\[\e[0;31m\]"
 YELLOW="\[\033[0;33m\]"
