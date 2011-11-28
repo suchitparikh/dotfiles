@@ -11,7 +11,7 @@ export EDITOR="/usr/bin/vim"
 
 # bash completion
 . ~/.bash_completion.d/*
-. /usr/local/etc/bash_completion
+[ -d /usr/local/etc/bash_completion.d ] && . /usr/local/etc/bash_completion.d/*
 
 RED="\[\e[0;31m\]"
 YELLOW="\[\033[0;33m\]"
