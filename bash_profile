@@ -7,7 +7,7 @@ export PATH=/usr/local/Cellar/android-sdk/r12/tools:~/bin:~/.cabal/bin:/usr/loca
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
-export EDITOR="vim"
+export EDITOR="/usr/bin/vim"
 
 # bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -41,3 +41,6 @@ if [ -f /usr/local/bin/brew ]; then
     export GOROOT=`brew --prefix go`
     export GOBIN="$GOROOT/bin"
 fi
+
+# For Node.js
+export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
