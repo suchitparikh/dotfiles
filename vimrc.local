@@ -10,6 +10,7 @@ set expandtab
 
 au FileType php  setlocal keywordprg=pman
 au FileType sass setlocal ts=2 sw=2 sts=2
+au FileType go   setlocal nowrap textwidth=0
 
 " Trim whitespace from the end of all lines
 command Trim %s/\s\+$//
@@ -22,3 +23,5 @@ command W w
 
 " Alias bs to show list of buffers
 command Bs buffers
+
+call pathogen#infect()
