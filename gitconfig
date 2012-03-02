@@ -36,7 +36,3 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
     ls = ls-files
-
-[github]
-	user = dtjm
-	token = 75fc3c9b533356066b66943494c1e14b
