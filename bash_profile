@@ -7,6 +7,9 @@ export PATH=/usr/local/Cellar/android-sdk/r12/tools:~/bin:~/.cabal/bin:/usr/loca
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
+# for tmux: export 256color
+[ -n "$TMUX" ] && export TERM=screen-256color
+
 export EDITOR="/usr/bin/vim"
 
 # bash completion
