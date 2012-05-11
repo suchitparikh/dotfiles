@@ -1,11 +1,13 @@
 " Appearances
 color solarized
 
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
+" Solarized options
+set background=dark
+"if has('gui_running')
+  "set background=dark
+"else
+  "set background=light
+"endif
 
 set guifont=ProggyCleanTT:h16
 
