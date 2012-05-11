@@ -3,23 +3,22 @@
 	email = samxnguyen@gmail.com
 
 [core]
-	excludesfile = /Users/nguyens23/.gitignore
 	quotepath = false
-
-[gui]
-	recentrepo = /Volumes/deploy-test/cds-ui
 
 [color]
     ui = auto
+
 [color "branch"]
     current = yellow reverse
     local = yellow
     remote = green
+
 [color "diff"]
     meta = yellow
     frag = magenta
     old = red
     new = white bold
+
 [color "status"]
     added = yellow
     changed = green

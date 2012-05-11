@@ -11,9 +11,15 @@
 
 SCRIPT=`basename $0`
 DIR=$(cd `dirname $0` && pwd)
-cd $HOME
 
-(cd $DIR; git submodule update --init)
+if [ ! -e $DIR/vim ]; then
+  git clone git://github.com/carlhuda/janus.git $DIR/vim
+  pushd $DIR/vim
+  rake
+  popd
+fi
+
+cd $HOME
 
 for FILE in `ls -1 "$DIR" | grep -v "$SCRIPT"`
 do
@@ -22,13 +28,7 @@ do
     then
         echo "x $DOTFILE"
     else
-        ln -s "$DIR/$FILE" "$DOTFILE"
+        ln -sv "$DIR/$FILE" "$DOTFILE"
         [ $? -eq 0 ] && echo "+ $DOTFILE" || echo "? $DOTFILE"
-
-        # Run rake if necessary
-        if [ -e "$DIR/$FILE/Rakefile" ]
-        then
-            (cd "$DIR/$FILE"; rake)
-        fi
     fi
 done

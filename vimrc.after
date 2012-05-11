@@ -1,5 +1,12 @@
 " Appearances
-color molokai
+color solarized
+
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+
 set guifont=ProggyCleanTT:h16
 
 set tabstop=4
@@ -18,10 +25,8 @@ command Trim %s/\s\+$//
 "" Convert tabs to 4 spaces
 command Detab %s/\t/    /g
 
-" Alias W to also be "save"
+" Alias W to also be "save" (fat fingers)
 command W w
 
 " Alias bs to show list of buffers
 command Bs buffers
-
-call pathogen#infect()
