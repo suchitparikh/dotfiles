@@ -1,0 +1,19 @@
+{
+	"auto_upgrade_last_run": 1351109621,
+	"installed_packages":
+	[
+		"DocBlockr",
+		"Git",
+		"GoSublime",
+		"Goto Documentation",
+		"Handlebars",
+		"HexViewer",
+		"Package Control",
+		"Phpcs",
+		"Pretty JSON",
+		"SublimeLinter",
+		"SVN",
+		"TrailingSpaces",
+		"Wrap Plus"
+	]
+}

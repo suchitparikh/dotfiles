@@ -1,0 +1,14 @@
+{
+    "javascript_linter": "gjslint",
+
+    //"gjslint_options": ["nojsdoc"],
+
+    // A list of gjslint error numbers to ignore. The list of error codes is here:
+    // http://closure-linter.googlecode.com/svn/trunk/closure_linter/errors.py
+    "gjslint_ignore":
+    [
+        200, // INVALID_JSDOC_TAG
+        230 // JSDOC_PREFER_QUESTION_TO_PIPE_NULL
+    ]
+
+}
