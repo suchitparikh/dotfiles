@@ -1,6 +1,11 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
-	"font_size": 12.0,
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"font_face": "ProggyCleanTT",
+	"font_options":
+	[
+		"no_antialias"
+	],
+	"font_size": 16,
 	"ignored_packages":
 	[
 		"Phpcs"
