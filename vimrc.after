@@ -1,10 +1,12 @@
 " Colorscheme
-if has('gui_running')
-    colorscheme molokai
-else
-    colorscheme solarized
-    set background=dark
-endif
+colorscheme molokai
+
+"if has('gui_running')
+    "colorscheme molokai
+"else
+    "colorscheme solarized
+    "set background=dark
+"endif
 
 set guifont=Consolas:h14
 set tabstop=4
@@ -25,7 +27,7 @@ command Trim %s/\s\+$//
 command Detab %s/\t/    /g
 
 " Alias W to also be "save" (fat fingers)
-command W w
+" command W w
 
 " Alias bs to show list of buffers
 command Bs buffers

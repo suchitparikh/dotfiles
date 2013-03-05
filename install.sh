@@ -32,3 +32,29 @@ do
         [ $? -eq 0 ] && echo "+ $DOTFILE" || echo "? $DOTFILE"
     fi
 done
+
+if [[ $OSTYPE == "darwin12" ]]; then
+    echo "=> Installing OS X Fonts"
+    FONTDIR="$DIR/Library/Fonts"
+    for FONT in `ls $FONTDIR`; do
+        TARGET="$HOME/Library/Fonts/$FONT"
+        if [ -e "$TARGET" ]; then
+            echo "x $TARGET"
+        else
+            cp "$FONTDIR/$FONT" "$TARGET"
+            echo "+ $TARGET"
+        fi
+    done
+
+    echo "=> Installing OS X Preferences"
+    PREFSDIR="$DIR/Library/Preferences"
+    for PREF in `ls $PREFSDIR`; do
+        TARGET="$HOME/Library/Preferences/$PREF"
+        if [ -e "$TARGET" ]; then
+            echo "x $TARGET"
+        else
+            ln -s "$PREFSDIR/$PREF" "$TARGET"
+            echo "+ $TARGET"
+        fi
+    done
+fi
