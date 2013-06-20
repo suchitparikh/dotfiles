@@ -37,10 +37,7 @@ shopt -s histappend                      # append to history, don't overwrite it
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # For Go programming
-if [ -f /usr/local/bin/brew ]; then
-    export GOROOT=`brew --prefix go`
-    export GOBIN="$GOROOT/bin"
-fi
+export PATH=$PATH:/usr/local/go/bin
 
 # For Node.js
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
