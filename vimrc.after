@@ -35,3 +35,7 @@ command Bs buffers
 " Unmap <Leader>t from BufferGator because it collides with AlignMaps
 unmap <Leader>t
 map <Leader>T :BuffergatorTabsOpen<CR>
+
+" Use relative line numbers sometimes
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
