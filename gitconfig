@@ -4,6 +4,7 @@
 
 [core]
 	quotepath = false
+	excludesfile = ~/.dotfiles/gitignore_global
 
 [color]
     ui = auto
