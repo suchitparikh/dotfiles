@@ -35,3 +35,5 @@ command Bs buffers
 " Unmap <Leader>t from BufferGator because it collides with AlignMaps
 unmap <Leader>t
 map <Leader>T :BuffergatorTabsOpen<CR>
+
+let g:ctrlp_cmd = 'CtrlPCurWD'

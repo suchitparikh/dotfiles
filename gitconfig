@@ -1,6 +1,6 @@
 [user]
 	name = Sam Nguyen
-	email = samxnguyen@gmail.com
+	email = sam.nguyen@sendgrid.com
 
 [core]
 	quotepath = false
@@ -26,15 +26,18 @@
     untracked = cyan
 
 [alias]
-    st = status
-    ci = commit
     br = branch
+    ci = commit --verbose
     co = checkout
     df = diff
     dfc = diff --cached
+    fa = fetch --all
+    ff = merge --ff
+    nff = merge --no-ff
     lg = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all
     ls = ls-files
+    st = status
 [merge]
 	tool = vimdiff

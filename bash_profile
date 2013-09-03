@@ -28,9 +28,15 @@ export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
 
+shopt -s autocd
+
 # Update history after every command so that history is shared between
 # different sessions (and between Terminal windows)
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # For Node.js
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+
+# For Python (SendGrid)
+export PYTHONPATH=/usr/local/sendlib-python:$PYTHONPATH
+export SMOKEMAN_ENV=mp-dev
