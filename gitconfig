@@ -1,9 +1,10 @@
 [user]
 	name = Sam Nguyen
-	email = samxnguyen@gmail.com
+	email = sam.nguyen@sendgrid.com
 
 [core]
 	quotepath = false
+	excludesfile = ~/.dotfiles/gitignore_global
 
 [color]
     ui = auto
@@ -25,17 +26,20 @@
     untracked = cyan
 
 [alias]
-    st = status
-    ci = commit
     br = branch
+    ci = commit
+    ci = commit --verbose
     co = checkout
     df = diff
     dfc = diff --cached
+    fa = fetch --all
+    ff = merge --ff
     lg = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all
     ls = ls-files
+    nff = merge --no-ff
+    st = status
+
 [merge]
 	tool = vimdiff
-[gui]
-	recentrepo = /Volumes/jose/inflight_sdk

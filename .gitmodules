@@ -1,0 +1,9 @@
+[submodule "janus/fugitive"]
+	path = janus/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "janus/numbertoggle"]
+	path = janus/numbertoggle
+	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "janus/airline"]
+	path = janus/airline
+	url = https://github.com/bling/vim-airline

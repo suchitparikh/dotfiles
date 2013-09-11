@@ -1,12 +1,10 @@
 " Colorscheme
-colorscheme molokai
-
-"if has('gui_running')
-    "colorscheme molokai
-"else
-    "colorscheme solarized
-    "set background=dark
-"endif
+if &diff
+    colorscheme solarized
+    set background=dark
+else
+    colorscheme molokai
+endif
 
 set guifont=Consolas:h14
 set tabstop=4
@@ -14,11 +12,14 @@ set shiftwidth=4
 set softtabstop=4
 set textwidth=80
 set expandtab
+set mouse=a
+set ttymouse=xterm2
 
 au FileType php  setlocal keywordprg=pman
 au FileType sass setlocal tabstop=2 shiftwidth=2 softtabstop=2
 au FileType go   setlocal nowrap textwidth=0
 au FileType json setlocal foldmethod=indent
+au FileType perl setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " Trim whitespace from the end of all lines
 command Trim %s/\s\+$//
@@ -35,3 +36,5 @@ command Bs buffers
 " Unmap <Leader>t from BufferGator because it collides with AlignMaps
 unmap <Leader>t
 map <Leader>T :BuffergatorTabsOpen<CR>
+
+let g:ctrlp_cmd = 'CtrlPCurWD'
