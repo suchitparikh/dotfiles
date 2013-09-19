@@ -34,20 +34,20 @@ function __env_ps1 {
 
 PS1="\u@$WHITE\h$CLR:$GREEN\W$YELLOW\$(__git_ps1) $BLUE\$(__env_ps1)$YELLOW\n\$$CLR "
 
+# Bash options
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
-
 shopt -s autocd
 
 # Update history after every command so that history is shared between
 # different sessions (and between Terminal windows)
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+#export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # For Node.js
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 
-# For Python (SendGrid)
-export PYTHONPATH=/usr/local/sendlib-python:$PYTHONPATH
-export SMOKEMAN_ENV=mp-dev
+# Load host-specific bash_profile
+HOSTNAME=`hostname`
+[ -f ~/.bash_profile.$HOSTNAME ] && source ~/.bash_profile.$HOSTNAME

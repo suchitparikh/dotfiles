@@ -1,0 +1,3 @@
+# For Python (SendGrid)
+export PYTHONPATH=/usr/local/sendlib-python:$PYTHONPATH
+export SMOKEMAN_ENV=mp-dev
