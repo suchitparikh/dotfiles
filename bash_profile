@@ -43,7 +43,7 @@ shopt -s autocd
 
 # Update history after every command so that history is shared between
 # different sessions (and between Terminal windows)
-#export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # For Node.js
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
