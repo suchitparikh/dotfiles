@@ -50,4 +50,4 @@ export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 
 # Load host-specific bash_profile
 HOSTNAME=`hostname`
-[ -f ~/.bash_profile.$HOSTNAME ] && source ~/.bash_profile.$HOSTNAME
+[ -f ~/.dotfiles/bash_profile.$HOSTNAME ] && source ~/.dotfiles/bash_profile.$HOSTNAME
