@@ -1,6 +1,6 @@
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
-export PATH=/usr/local/go/bin:/usr/local/Cellar/android-sdk/r12/tools:~/bin:~/.cabal/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Library/Contributions/examples:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/go/bin:~/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
 
 # Color terminal
 # Enable colors in `ls`
