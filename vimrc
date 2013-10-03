@@ -1,11 +1,3 @@
-" Colorscheme
-if &diff
-    colorscheme solarized
-    set background=dark
-else
-    colorscheme molokai
-endif
-
 set guifont=Consolas:h14
 set tabstop=4
 set shiftwidth=4
@@ -31,13 +23,4 @@ command Trim %s/\s\+$//
 command Detab %s/\t/    /g
 
 " Alias W to also be "save" (fat fingers)
-" command W w
-
-" Alias bs to show list of buffers
-command Bs buffers
-
-" Unmap <Leader>t from BufferGator because it collides with AlignMaps
-unmap <Leader>t
-map <Leader>T :BuffergatorTabsOpen<CR>
-
-let g:ctrlp_cmd = 'CtrlPCurWD'
+command W w

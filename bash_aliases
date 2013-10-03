@@ -11,3 +11,16 @@ alias llh='ls -lh'
 
 # Git
 alias g='git'
+
+# mp dev aliases
+alias apid='cd /usr/local/apid'
+alias bounced='cd /usr/local/bounced'
+alias ismtpd='cd /usr/local/ismtpd'
+alias filterd='cd /usr/local/filterd'
+alias kamta='cd /usr/local/kamta'
+alias linkd='cd /usr/local/linkd'
+alias apps='cd /usr/local/apps'
+alias eventd='cd /usr/local/eventd'
+alias webapid='cd /usr/local/webapid'
+alias acceptance='cd /usr/local/mp-acceptance'
+alias mp-qa='cd /usr/local/apps/devs/suchit/mp-qa'
