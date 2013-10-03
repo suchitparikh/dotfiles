@@ -14,6 +14,9 @@ set textwidth=80
 set expandtab
 set mouse=a
 set ttymouse=xterm2
+set number
+set smartindent
+syntax on
 
 au FileType php  setlocal keywordprg=pman
 au FileType sass setlocal tabstop=2 shiftwidth=2 softtabstop=2

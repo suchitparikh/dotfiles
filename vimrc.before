@@ -1,3 +1,0 @@
-call janus#disable_plugin('css-color')
-" In case we are using a different shell
-set shell=/bin/bash
