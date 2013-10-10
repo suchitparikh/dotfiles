@@ -1,10 +1,8 @@
-set guifont=Consolas:h14
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set textwidth=80
 set expandtab
-set mouse=a
 set ttymouse=xterm2
 set number
 set smartindent
