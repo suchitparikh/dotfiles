@@ -2,3 +2,4 @@ tags
 *.swo
 *.swp
 *.pyc
+*.diff
