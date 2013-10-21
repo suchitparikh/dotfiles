@@ -13,6 +13,8 @@ alias llh='ls -lh'
 alias g='git'
 
 # mp dev aliases
+alias sendlib='cd /usr/local/sendlib'
+alias sendlibp='cd /usr/local/sendlib-python'
 alias apid='cd /usr/local/apid'
 alias bounced='cd /usr/local/bounced'
 alias ismtpd='cd /usr/local/ismtpd'
@@ -24,3 +26,6 @@ alias eventd='cd /usr/local/eventd'
 alias webapid='cd /usr/local/webapid'
 alias acceptance='cd /usr/local/mp-acceptance'
 alias mp-qa='cd /usr/local/apps/devs/suchit/mp-qa'
+
+# virtual environments
+alias vacc='source /tmp/venv/acceptance/bin/activate'
