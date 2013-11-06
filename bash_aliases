@@ -9,6 +9,9 @@ alias ll='ls -lahGF'
 alias lla='ls -la'
 alias llh='ls -lh'
 
+# other
+alias netstat='netstat -tulpn'
+
 # Git
 alias g='git'
 
@@ -25,7 +28,9 @@ alias apps='cd /usr/local/apps'
 alias eventd='cd /usr/local/eventd'
 alias webapid='cd /usr/local/webapid'
 alias acceptance='cd /usr/local/mp-acceptance'
+alias tools='cd /usr/local/apps/tools'
 alias mp-qa='cd /usr/local/apps/devs/suchit/mp-qa'
+alias eventstreamerd='cd /opt/sendgrid/eventstreamerd/current'
 
 # virtual environments
-alias vacc='source /tmp/venv/acceptance/bin/activate'
+alias vacc='source /usr/local/venv/vacc/bin/activate'

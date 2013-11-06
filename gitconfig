@@ -29,19 +29,22 @@
     br = branch
     ci = commit
     ci = commit --verbose
+    cl = clean -fdx
+    cn = clone
     co = checkout
     df = diff -w
     dfc = diff --cached -w
     fa = fetch --all
     ff = merge --ff
     fo = fetch origin
-    fm = fetch mine
+    fsp = fetch sp
     lg = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all
     ls = ls-files
     mt = mergetool
     nff = merge --no-ff
+    po = pull origin
     st = status
 
 [merge]
