@@ -8,8 +8,13 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-export PYTHONPATH=/usr/local/sendlib-python/
+export PYTHONPATH=:/usr/local/sendlib-python/
 
+# Go lang path
+export GOROOT=/usr/local/golang/go
+export GOPATH=/usr/local/golang/workspace
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace

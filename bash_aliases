@@ -9,8 +9,9 @@ alias ll='ls -lahGF'
 alias lla='ls -la'
 alias llh='ls -lh'
 
-# other
-alias netstat='netstat -tulpn'
+alias refresh='source ~/.bashrc'
+alias nets='netstat -tulpn | grep'
+alias proc='ps aux | grep'
 
 # Git
 alias g='git'

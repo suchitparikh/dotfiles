@@ -22,3 +22,11 @@ command Detab %s/\t/    /g
 
 " Alias W to also be "save" (fat fingers)
 command W w
+
+" Go lang stuff
+" Clear filetype flags before changing runtimepath to force Vim to reload them.
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
