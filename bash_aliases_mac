@@ -1,0 +1,29 @@
+# daily use
+alias cls='clear'
+alias rm='rm -i'
+alias mv='mv -i'
+alias ll='ls -lahFG'
+
+alias hosts='sudo vim /etc/hosts'
+alias code='cd ~/SendGrid/code'
+
+#
+alias grep='grep --color'
+alias nets='netstat -tuln | grep '
+alias proc='ps aux | grep '
+
+# vagrant aliases
+alias snet='cd ~/SendGrid/code/sendgrid/sendgridnet2/sendgridnet'
+alias vg='snet; vagrant ssh mp-dev'
+alias vgu='snet; vagrant up mp-dev; vagrant ssh mp-dev'
+alias vgs='snet; vagrant suspend mp-dev'
+alias sd='cd ~/SendGrid/code/sendgrid/sendgridnet2/sendgrid_development'
+alias vgd='sd; vagrant ssh'
+alias vgud='sd; vagrant up; vagrant ssh'
+alias vgsd='sd; vagrant suspend'
+
+# mysql aliases
+alias mysql-start='sudo /usr/local/mysql/support-files/mysql.server start'
+alias mysql-stop='sudo /usr/local/mysql/support-files/mysql.server stop'
+
+alias mysqld='./usr/local/mysql/bin/mysqld'

@@ -44,7 +44,9 @@
     ls = ls-files
     mt = mergetool
     nff = merge --no-ff
+    pl = pull
     po = pull origin
+    ps = push
     st = status
 
 [merge]
