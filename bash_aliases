@@ -5,10 +5,9 @@ fi
 
 # General
 alias cls='clear'
-alias ll='ls -lahGF'
+alias ll='ls -lAhGF'
 alias lla='ls -la'
 alias llh='ls -lh'
-
 alias refresh='source ~/.bashrc'
 alias nets='netstat -tulpn | grep'
 alias proc='ps aux | grep'
