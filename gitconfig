@@ -34,6 +34,7 @@
     co = checkout
     df = diff
     dfc = diff --cached -w
+    f = fetch
     fa = fetch --all
     fap = fetch --all --prune
     ff = merge --ff
