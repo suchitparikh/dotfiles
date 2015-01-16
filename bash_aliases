@@ -11,6 +11,7 @@ alias llh='ls -lh'
 alias refresh='source ~/.bashrc'
 alias nets='netstat -tulpn | grep'
 alias proc='ps aux | grep'
+alias fixresolv='sudo cp ~/tmp/resolv.conf /etc/resolv.conf'
 
 # Git
 alias g='git'
@@ -32,6 +33,7 @@ alias tools='cd /home/vagrant/core_development/development_projects/apps/tools'
 alias mp-qa='cd /home/vagrant/core_development/development_projects/apps/devs/suchit/mp-qa'
 alias eventstreamerd='cd /home/vagrant/core_development/development_projects/eventstreamerd/current'
 alias ops='cd /home/vagrant/core_development/development_projects/ops'
+alias spt='cd /home/vagrant/core_development/development_projects/spt'
 
 # virtual environments
 alias vacc='source /usr/local/venv/vacc/bin/activate'

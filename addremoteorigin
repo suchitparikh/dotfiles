@@ -1,0 +1,2 @@
+#!/bin/bash
+git add remote origin git@github.com:sendgrid-ops/$1

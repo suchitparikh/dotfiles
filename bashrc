@@ -14,7 +14,7 @@ export PYTHONPATH=:/usr/local/sendlib-python/
 source /usr/bin/virtualenvwrapper.sh
 
 # Go lang path
-export GOROOT=/usr/local/golang/go
+export GOROOT=/usr/local/go
 export GOPATH=/usr/local/golang/workspace
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
