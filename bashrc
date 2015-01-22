@@ -8,14 +8,16 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-export PYTHONPATH=:/usr/local/sendlib-python/
+export WORKSPACE=/home/vagrant/core_development/development_projects/
+export PYTHONPATH=:$WORKSPACE/sendlib-python
+
 
 # virtualenvwrapper
 source /usr/bin/virtualenvwrapper.sh
 
 # Go lang path
 export GOROOT=/usr/local/go
-export GOPATH=/usr/local/golang/workspace
+export GOPATH=/home/vagrant/core_development/development_projects/go
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 
