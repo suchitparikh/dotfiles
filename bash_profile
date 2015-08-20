@@ -1,3 +1,4 @@
+[ -f ~/.bashrc ] && source ~/.bashrc
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
 export PATH=/usr/local/go/bin:~/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
