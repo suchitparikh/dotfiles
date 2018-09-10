@@ -1,3 +1,4 @@
+[ -f ~/.bashrc ] && source ~/.bashrc
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 [ -f ~/.bashrc ] && source ~/.bashrc
 

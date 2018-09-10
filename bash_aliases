@@ -1,5 +1,6 @@
 # daily use
 alias cls='clear'
+<<<<<<< HEAD
 alias rm='rm -i'
 alias mv='mv -i'
 alias ll='ls -lAhFG'
@@ -31,8 +32,6 @@ alias ops='cd ~/sg/code/ops'
 # MYSQL 
 alias mysql-start='brew services start mysql'
 alias mysql-stop='brew services stop mysql'
-
-alias mysqld='./usr/local/mysql/bin/mysqld'
 
 # GIT
 alias g='git'

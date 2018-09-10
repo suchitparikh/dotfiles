@@ -32,12 +32,15 @@
     cl = clean -fdx
     cn = clone
     co = checkout
-    df = diff -w
+    df = diff
     dfc = diff --cached -w
+    f = fetch
     fa = fetch --all
+    fap = fetch --all --prune
     ff = merge --ff
     fo = fetch origin
     fap = fetch --all --prune
+    fop = fetch origin --prune
     fsp = fetch sp
     fspp = fetch sp --prune
     lg = log -p
@@ -57,3 +60,4 @@
     insteadOf = https://github.com/
 [push]
 	default = simple
+    tool = vimdiff
