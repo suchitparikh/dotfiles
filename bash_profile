@@ -1,6 +1,11 @@
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
+[ -f ~/.bashrc ] && source ~/.bashrc
 
-export PATH=/usr/local/go/bin:~/bin:/usr/local/share/npm/bin:/usr/local/Cellar/ruby/1.9.1-p378/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/go/bin:~/bin:/usr/local/share/npm/bin:/opt/chefdk/embedded/bin/ruby:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
+
+export PATH=/opt/chefdk/bin:/opt/chefdk/embedded/bin:$PATH
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/lib
 
 # Color terminal
 # Enable colors in `ls`
@@ -39,7 +44,7 @@ export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
 shopt -s histappend                      # append to history, don't overwrite it
-shopt -s autocd
+#shopt -s autocd
 
 # Update history after every command so that history is shared between
 # different sessions (and between Terminal windows)

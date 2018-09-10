@@ -37,7 +37,9 @@
     fa = fetch --all
     ff = merge --ff
     fo = fetch origin
+    fap = fetch --all --prune
     fsp = fetch sp
+    fspp = fetch sp --prune
     lg = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --date=relative --all
@@ -51,3 +53,7 @@
 
 [merge]
 	tool = vimdiff
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[push]
+	default = simple

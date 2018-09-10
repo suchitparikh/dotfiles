@@ -1,29 +1,62 @@
-# daily use
+## daily use
 alias cls='clear'
 alias rm='rm -i'
 alias mv='mv -i'
-alias ll='ls -lahFG'
+alias ll='ls -lAhFG'
+alias lt='ls -lahFGt'
 
 alias hosts='sudo vim /etc/hosts'
-alias code='cd ~/SendGrid/code'
+alias bkhosts='sudo cp /etc/hosts ~/sg/hosts'
+alias sghosts='sudo cp ~/sg/hosts /etc/hosts'
+alias code='cd ~/sg/code'
+alias deploy='cd $GOPATH/src/github.com/sendgrid/deploy'
 
-#
+## TIME
+alias ts='date +%s' # current timestamp
+
+##
 alias grep='grep --color'
 alias nets='netstat -tuln | grep '
 alias proc='ps aux | grep '
+alias refresh='source ~/.bashrc'
+alias dnsf='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 
-# vagrant aliases
-alias snet='cd ~/SendGrid/code/sendgrid/sendgridnet2/sendgridnet'
-alias vg='snet; vagrant ssh mp-dev'
-alias vgu='snet; vagrant up mp-dev; vagrant ssh mp-dev'
-alias vgs='snet; vagrant suspend mp-dev'
-alias sd='cd ~/SendGrid/code/sendgrid/sendgridnet2/sendgrid_development'
-alias vgd='sd; vagrant ssh'
-alias vgud='sd; vagrant up; vagrant ssh'
-alias vgsd='sd; vagrant suspend'
+## LAZIER
+alias c='clear'
+alias r='source ~/.bashrc'
+alias s='sudo bash'
 
-# mysql aliases
-alias mysql-start='sudo /usr/local/mysql/support-files/mysql.server start'
-alias mysql-stop='sudo /usr/local/mysql/support-files/mysql.server stop'
+## NON-GO APPS
+alias cod='cd ~/sg/code/'
+alias apps='function fnapps(){ cd ~/sg/code/appdev/$1; }; fnapps'
+alias ops='function fnops(){ cd ~/sg/code/ops/$1; }; fnops'
 
-alias mysqld='./usr/local/mysql/bin/mysqld'
+## MYSQL 
+alias mysql-start='brew services start mysql'
+alias mysql-stop='brew services stop mysql'
+
+## GIT
+alias g='git'
+alias gcl='g br --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d'
+alias gclf='g br | grep -v "\*" | grep -v master | xargs -n 1 git branch -D'
+alias gu='g co master; g fap; g po master; gcl'
+alias gdm='g df origin/master'
+alias ge='git commit --allow-empty -m "Trigger build"'
+alias gdtl='rm -f .git/refs/tags/*; git fetch --tags; sleep 1; g tag -l | grep _ | xargs -n 1 git push --delete origin'
+
+## GO
+alias gow='function fngow(){ cd $GOPATH/src/github.com/sendgrid/$1; }; fngow'
+
+## DOCKER
+alias dsp='docker system prune'
+alias dspf='docker system prune -f'
+
+# docker kill all
+alias dka='docker ps -a | awk "{print \$1}" | tail -n +2 | xargs docker rm -f'
+alias dki='docker images | grep "<none>" | awk "{print \$3}" | xargs docker rmi'
+alias dcl='dka; dki'
+
+# docker compose, machine, et al.
+alias dc='docker-compose'
+alias dm='docker-machine'
+alias dmenv='eval "$(docker-machine env default)"'

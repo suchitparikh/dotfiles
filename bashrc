@@ -1,6 +1,9 @@
 # source the rvm file
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# source the .bash_aliases
+[[ -s "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -8,12 +11,8 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-export PYTHONPATH=:/usr/local/sendlib-python/
-
 # Go lang path
-export GOROOT=/usr/local/golang/go
-export GOPATH=/usr/local/golang/workspace
-export PATH=$PATH:$GOROOT/bin
+export GOPATH=~/sg/code/go
 export PATH=$PATH:$GOPATH/bin
 
 # don't put duplicate lines in the history. See bash(1) for more options
@@ -256,3 +255,24 @@ ps1_set()
 }
 
 ps1_set
+
+function slknife() { knife "$@" -c ~/.chef/knife.rb_SL ;}
+function sjcknife() { knife "$@" -c ~/.chef/knife.rb_SJC ;}
+
+function allknife() {
+  echo SJC ...
+  knife "$@" -c ~/.chef/knife.rb_SJC
+  if [ $? -ne 0 ]; then
+    echo SJC failed
+    return 1
+  fi
+  echo SoftLayer ...
+  knife "$@" -c ~/.chef/knife.rb_SL
+  if [ $? -ne 0 ]; then
+    echo SL failed
+    return 1
+  fi
+  echo done.
+}
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

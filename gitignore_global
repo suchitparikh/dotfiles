@@ -3,3 +3,12 @@ tags
 *.swp
 *.pyc
 *.diff
+*.idea
+*.iml
+.ignore/
+tmp_test.go
+log
+log/
+
+.DS_Store
+Berksfile.lock

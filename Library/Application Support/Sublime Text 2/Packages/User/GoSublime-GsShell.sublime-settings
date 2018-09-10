@@ -1,9 +1,0 @@
-{
-	"cmd_hist":
-	{
-		"/Volumes/jose/go":
-		[
-			"go build eventserver.go"
-		]
-	}
-}
