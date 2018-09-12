@@ -42,7 +42,7 @@ alias gclf='g br | grep -v "\*" | grep -v master | xargs -n 1 git branch -D'
 alias gu='g co master; g fap; g po master; gcl'
 alias gdm='g df origin/master'
 alias ge='git commit --allow-empty -m "Trigger build"'
-alias gdtl='rm -f .git/refs/tags/*; git fetch --tags; sleep 1; g tag -l | grep _ | xargs -n 1 git push --delete origin'
+alias gdtl='g fetch --tags; g tag -l | grep _ | xargs -n 1 git push --delete origin; git fetch --prune origin "+refs/tags/*:refs/tags/*"'
 
 ## GO
 alias gow='function fngow(){ cd $GOPATH/src/github.com/sendgrid/$1; }; fngow'

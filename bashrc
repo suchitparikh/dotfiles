@@ -1,6 +1,3 @@
-# source the rvm file
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # source the .bash_aliases
 [[ -s "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
 
