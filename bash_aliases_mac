@@ -25,6 +25,8 @@ alias dnsf='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 alias c='clear'
 alias r='source ~/.bashrc'
 alias s='sudo bash'
+alias k='kubectl'
+alias j='ssh jump'
 
 ## Repos
 alias gow='function fngow(){ cd $GOPATH/src/github.com/sendgrid/$1; }; fngow'
@@ -42,6 +44,7 @@ alias gclf='g br | grep -v "\*" | grep -v master | xargs -n 1 git branch -D'
 alias gdtl='g fetch --tags; g tag -l | grep _ | xargs -n 1 git push --delete origin; git fetch --prune origin "+refs/tags/*:refs/tags/*"'
 alias gu='g co master; g fap; g po master; gcl'
 alias gdm='g df origin/master'
+alias gdh='g df HEAD'
 alias ge='git commit --allow-empty -m "Trigger build"'
 alias gps='function fngps(){ git push $1 $2; }; fngps'
 alias gpso='function fngpso(){ git push origin $1; }; fngpso'
@@ -54,8 +57,19 @@ alias dspf='docker system prune -f'
 alias dka='docker ps -a | awk "{print \$1}" | tail -n +2 | xargs docker rm -f'
 alias dki='docker images | grep "<none>" | awk "{print \$3}" | xargs docker rmi'
 alias dcl='dka; dki'
+alias dvp='docker volume prune -f'
 
 # docker compose, machine, et al.
 alias dc='docker-compose'
 alias dm='docker-machine'
 alias dmenv='eval "$(docker-machine env default)"'
+
+## KUBE
+alias kgp='k get po | grep '
+alias kdp='k describe po '
+alias kg='k get '
+alias kd='k describe '
+alias klf='k logs -f'
+
+## DNS
+alias digs='dig +short'

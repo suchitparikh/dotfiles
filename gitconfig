@@ -56,8 +56,10 @@
 
 [merge]
 	tool = vimdiff
-[url "git@github.com:"]
-    insteadOf = https://github.com/
 [push]
 	default = simple
     tool = vimdiff
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "ssh://git@github.com/sendgrid"]
+	insteadOf = https://github.com/sendgrid

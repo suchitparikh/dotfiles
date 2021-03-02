@@ -8,9 +8,20 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# Go lang path
+# Golang path
 export GOPATH=~/sg/code/go
 export PATH=$PATH:$GOPATH/bin
+
+# avoid go mod pain
+export GOSUMDB=off
+export GOPROXY=direct
+export GO111MODULE=off
+
+# helm
+export TILLER_NAMESPACE='deliverability'
+export AWS_SESSION_TTL=12h
+
+export HOMEBREW_GITHUB_API_TOKEN=0713c3d76687e4db78d9ce296cdb6291b8fa6100
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
